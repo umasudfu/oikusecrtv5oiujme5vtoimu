@@ -1,6 +1,6 @@
 repeat wait() until game:IsLoaded()
 getgenv().IsMultiStrat = true
-getgenv().Maps = {["Farm Lands"] = {"Soldier","Scout","Demoman"}, ["Grass Isle"] = {"Sniper","Scout","nil","nil","nil"}, ["Medieval Times"] = {"Sniper","Scout","nil","nil","nil"}, ["Necropolis"] = {"Sniper","Scout","nil","nil","nil"}, ["Crystal Cave"] = {"Sniper","Scout","nil","nil","nil"}, ["Winter Abyss"] = {"Soldier","Scout","Demoman"}, ["Portland"] = {"Soldier","Scout","Demoman"}, ["Wrecked Battlefield"] = {"Soldier","Scout","Demoman"}}
+getgenv().Maps = {["Farm Lands"] = {"Soldier","Scout","Demoman","nil", "nil"}, ["Grass Isle"] = {"Sniper","Scout","nil","nil","nil"}, ["Medieval Times"] = {"Sniper","Scout","nil","nil","nil"}, ["Necropolis"] = {"Sniper","Scout","nil","nil","nil"}, ["Crystal Cave"] = {"Sniper","Scout","nil","nil","nil"}, ["Winter Abyss"] = {"Soldier","Scout","Demoman", "nil", "nil"}, ["Portland"] = {"Soldier","Scout","Demoman", "nil", "nil"}, ["Wrecked Battlefield"] = {"Soldier","Scout","Demoman", "nil", "nil"}}
 local maps = {"Farm Lands", "Grass Isle", "Medieval Times", "Necropolis", "Crystal Cave", "Winter Abyss", "Portland", "Wrecked Battlefield"}
 if game.PlaceId == 3260590327 then
 loadstring(game:HttpGet("https://raw.githubusercontent.com/banbuskox/dfhtyxvzexrxgfdzgzfdvfdz/main/ckmhjvskfkmsStratFun2", true))()
