@@ -1,6 +1,3 @@
---[[
-   Maps: Crossroads, Farm Lands, Grass Isle, Medieval Times, Necropolis, Crystal Cave, Winter Abyss
-]]
 if not game:IsLoaded() then
 game.Loaded:Wait()
 end
