@@ -1,6 +1,6 @@
 repeat wait() until game:IsLoaded()
 getgenv().IsMultiStrat = true
-getgenv().Maps = {["Crossroads"] = {"Sniper","Scout","nil","nil","nil"}, ["Farm Lands"] = {"Soldier","Scout","Demoman"}, ["Grass Isle"] = {"Sniper","Scout","nil","nil","nil"}, ["Winter Abyss"] = {"Soldier","Scout","Demoman"}, ["Portland"] = {"Soldier","Scout","Demoman"}, ["Wrecked Battlefield"] = {"Soldier","Scout","Demoman"}}
+getgenv().Maps = {["Crossroads"] = {"Sniper","Scout","nil","nil","nil"}, ["Farm Lands"] = {"Soldier","Scout","Demoman"}, ["Grass Isle"] = {"Sniper","Scout","nil","nil","nil"}, ["Winter Abyss"] = {"Soldier","Scout","Demoman"}, ["Portland"] = {"Soldier","Scout","Demoman"}, ["Wrecked Battlefield"] = {"Soldier","Scout","Demoman"}, ["Polluted Wasteland II"] = {"Ace Pilot", "nil", "nil", "nil", "nil"}}
 local maps = {"Crossroads", "Farm Lands", "Grass Isle", "Medieval Times", "Necropolis", "Crystal Cave", "Winter Abyss", "Wrecked Battlefield", "Portland"}
 if game.PlaceId == 3260590327 then
 loadstring(game:HttpGet("https://raw.githubusercontent.com/banbuskox/dfhtyxvzexrxgfdzgzfdvfdz/main/ckmhjvskfkmsStratFun2", true))()
@@ -9,7 +9,7 @@ end
 if game.PlaceId == 5591597781 then
 map = game:GetService("ReplicatedStorage").State.Map.Value
 
-if map == maps[1] then
+elseif map == maps[1] then
 local TDS = loadstring(game:HttpGet("https://raw.githubusercontent.com/banbuskox/dfhtyxvzexrxgfdzgzfdvfdz/main/ckmhjvskfkmsStratFun2", true))() 
 TDS:Loadout("Sniper", "Scout", "nil", "nil", "nil") 
 TDS:Map("Crossroads", true, "Survival")
@@ -1372,5 +1372,35 @@ TDS:Upgrade(8, 24, 0, 46.1, false)
 TDS:Skip(24, 0, 40.8, false)
 TDS:Upgrade(1, 25, 0, 4.5, true)
 
+local TDS = loadstring(game:HttpGet("https://raw.githubusercontent.com/banbuskox/dfhtyxvzexrxgfdzgzfdvfdz/main/ckmhjvskfkmsStratFun2", true))() 
+TDS:Loadout("Ace Pilot", "nil", "nil", "nil", "nil") 
+TDS:Map("Polluted Wasteland II", true, "Survival")
+TDS:Place('Ace Pilot', 0.598020076751709, 1.0000081062316895, -2.5041074752807617, 0, 0, 1.3, false, 0, 0, 0, false)
+TDS:Skip(1, 0, 40.3, false)
+TDS:Upgrade(1, 1, 0, 4.3, true)
+TDS:Skip(2, 0, 40.3, false)
+TDS:Upgrade(1, 2, 0, 4.4, true)
+TDS:Skip(3, 0, 40.4, false)
+TDS:Place('Ace Pilot', 3.6470863819122314, 1.0000081062316895, -2.53128719329834, 3, 0, 2.9, false, 0, 0, 0, true)
+TDS:Skip(4, 0, 40.4, false)
+TDS:Upgrade(2, 4, 0, 3.6, true)
+TDS:Upgrade(2, 5, 0, 45.4, false)
+TDS:Skip(5, 0, 40.9, false)
+TDS:Skip(6, 0, 39.1, false)
+TDS:Skip(7, 0, 40.4, false)
+TDS:Upgrade(2, 7, 0, 3.0, true)
+TDS:Skip(8, 0, 40.3, false)
+TDS:Skip(9, 0, 40.3, false)
+TDS:Upgrade(1, 9, 0, 4.4, true)
+TDS:Skip(10, 0, 40.4, false)
+TDS:Skip(11, 0, 40.4, false)
+TDS:Upgrade(2, 12, 0, 46.4, false)
+TDS:Skip(12, 0, 40.4, false)
+TDS:Skip(13, 0, 40.3, false)
+TDS:Skip(14, 0, 40.4, false)
+TDS:Skip(15, 0, 40.5, false)
+TDS:Skip(16, 0, 40.3, false)
+TDS:Upgrade(2, 17, 0, 47.0, false)
+TDS:Skip(17, 0, 40.3, false)
 end
 end
