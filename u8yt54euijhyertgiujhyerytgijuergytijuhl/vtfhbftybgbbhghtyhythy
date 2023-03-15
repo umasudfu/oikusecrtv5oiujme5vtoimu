@@ -1,3 +1,6 @@
+--[[
+   Maps: Crossroads, Farm Lands, Grass Isle, Medieval Times, Necropolis
+]]
 repeat wait() until game:IsLoaded()
 getgenv().IsMultiStrat = true
 getgenv().Maps = {["Crossroads"] = {"Sniper","Scout","nil","nil","nil"}, ["Farm Lands"] = {"Sniper","Scout","nil","nil","nil"}, ["Grass Isle"] = {"Sniper","Scout","nil","nil","nil"}, ["Medieval Times"] = {"Sniper","Scout","nil","nil","nil"}, ["Necropolis"] = {"Sniper","Scout","nil","nil","nil"}, }
