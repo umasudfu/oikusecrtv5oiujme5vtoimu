@@ -1,7 +1,7 @@
 repeat wait() until game:IsLoaded()
 getgenv().IsMultiStrat = true
-getgenv().Maps = {["Farm Lands"] = {"Soldier","Scout","Demoman"}, ["Grass Isle"] = {"Sniper","Scout","nil","nil","nil"}, ["Winter Abyss"] = {"Soldier","Scout","Demoman"}, ["Portland"] = {"Soldier","Scout","Demoman"}, ["Wrecked Battlefield"] = {"Soldier","Scout","Demoman"}, ["Polluted Wasteland II"] = {"Ace Pilot", "nil", "nil", "nil", "nil"}, }
-local maps = {"Farm Lands", "Grass Isle", "Medieval Times", "Necropolis", "Crystal Cave", "Winter Abyss", "Wrecked Battlefield", "Portland", "Polluted Wasteland II"}
+getgenv().Maps = {["Portland"] = {"Militant", "Farm", "Scout", "nil", "nil"}}
+local maps = {"Portland"}
 if game.PlaceId == 3260590327 then
 loadstring(game:HttpGet("https://raw.githubusercontent.com/banbuskox/dfhtyxvzexrxgfdzgzfdvfdz/main/ckmhjvskfkmsStratFun2", true))()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/banbuskox/dfhtyxvzexrxgfdzgzfdvfdz/main/asjhxnjfdStratFunJoin", true))()
