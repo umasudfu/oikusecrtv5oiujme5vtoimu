@@ -1,15 +1,30 @@
+getgenv().ExecDis = true
 repeat wait() until game:IsLoaded()
-getgenv().IsMultiStrat = true
-getgenv().Maps = {["Simplicity"] = {"Scout", "Militant", "Farm", "nil", "nil"},["Forest Camp"] = {"Scout", "Militant", "Farm", "nil", "nil"},["Meltdown"] = {"Scout", "Militant", "Farm", "nil", "nil"},["Harbor"] = {"Militant", "Commander", "Farm", "Soldier", "nil"}}
-local maps = {"Simplicity","Forest Camp","Meltdown", "Harbor",}
-if game.PlaceId == 3260590327 then
-loadstring(game:HttpGet("https://raw.githubusercontent.com/banbuskox/dfhtyxvzexrxgfdzgzfdvfdz/main/ckmhjvskfkmsStratFun2", true))()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/banbuskox/dfhtyxvzexrxgfdzgzfdvfdz/main/asjhxnjfdStratFunJoin", true))()
-end
-if game.PlaceId == 5591597781 then
-map = game:GetService("ReplicatedStorage").State.Map.Value
 
-if map == maplist[1] then
+getgenv().IsMultiStrat = true
+
+getgenv().Maps = {["Simplicity"] = {"Scout", "Militant", "Farm", "nil", "nil"},["Forest Camp"] = {"Scout", "Militant", "Farm", "nil", "nil"},["Meltdown"] = {"Scout", "Militant", "Farm", "nil", "nil",["Harbor"] = {"Militant", "Commander", "Farm", "Soldier", "nil"}}--Note: You can follow this pattern to add as many maps to this as you'd like.
+maplist = {"Simplicity","Forest Camp","Meltdown", "Harbor"}}--Follow the pattern to add more maps, or remove them.
+
+if game.PlaceId == 3260590327 then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/banbuskox/dfhtyxvzexrxgfdzgzfdvfdz/main/ckmhjvskfkmsStratFun2", true))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/banbuskox/dfhtyxvzexrxgfdzgzfdvfdz/main/asjhxnjfdStratFunJoin", true))()
+end
+
+if game.PlaceId == 5591597781 then
+    map = game:GetService("ReplicatedStorage").State.Map.Value
+    game:GetService("Players").PlayerAdded:Connect(function() --back to lobby if it detected player join the game
+        game:GetService("TeleportService"):Teleport(3260590327)
+        wait(10)
+    end)
+    for i,v in pairs(game:GetService("Players"):GetPlayers()) do --back to lobby if there is more than 1 player
+        if i==2 then
+            game:GetService("TeleportService"):Teleport(3260590327)
+            wait(10)
+        end
+    end
+    if map == maplist[1] then
+--V2.2c
 local TDS = loadstring(game:HttpGet("https://raw.githubusercontent.com/banbuskox/dfhtyxvzexrxgfdzgzfdvfdz/main/ckmhjvskfkmsStratFun2", true))() 
 TDS:Loadout("Scout", "Militant", "Farm", "nil", "nil") 
 TDS:Map("Simplicity", true, "Survival")
@@ -283,8 +298,9 @@ TDS:Sell(44, 40, 98, 40.5, false)
 TDS:Sell(42, 40, 98, 39.7, false)
 TDS:Place('Militant', 23.35695457458496, 0.9999932050704956, -18.083642959594727, 40, 98, 35.6, false, 0, 0, 0, false)
 TDS:Sell(51, 40, 98, 33.8, false)
-
-elseif map == maplist[2] then
+    end
+    if map == maplist[2] then
+--V2.2c
 local TDS = loadstring(game:HttpGet("https://raw.githubusercontent.com/banbuskox/dfhtyxvzexrxgfdzgzfdvfdz/main/ckmhjvskfkmsStratFun2", true))() 
 TDS:Loadout("Scout", "Militant", "Farm", "nil", "nil") 
 TDS:Map("Forest Camp", true, "Survival")
@@ -568,8 +584,9 @@ TDS:Place('Militant', 0.5710020065307617, 1.0500046014785767, -10.20835304260253
 TDS:Upgrade(54, 40, 98, 11.1, false)
 TDS:Upgrade(54, 40, 98, 11.2, false)
 TDS:Upgrade(54, 40, 98, 11.4, false)
-
-elseif map == maplist[3] then
+    end
+    if map == maplist[3] then
+--V2.2c
 local TDS = loadstring(game:HttpGet("https://raw.githubusercontent.com/banbuskox/dfhtyxvzexrxgfdzgzfdvfdz/main/ckmhjvskfkmsStratFun2", true))() 
 TDS:Loadout("Scout", "Militant", "Farm", "nil", "nil") 
 TDS:Map("Meltdown", true, "Survival")
