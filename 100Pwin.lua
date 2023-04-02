@@ -9,8 +9,7 @@ end
 if game.PlaceId == 5591597781 then
 map = game:GetService("ReplicatedStorage").State.Map.Value
 
-    if map == maplist[1] then
---V2.2c
+if map == maplist[1] then
 local TDS = loadstring(game:HttpGet("https://raw.githubusercontent.com/banbuskox/dfhtyxvzexrxgfdzgzfdvfdz/main/ckmhjvskfkmsStratFun2", true))() 
 TDS:Loadout("Scout", "Militant", "Farm", "nil", "nil") 
 TDS:Map("Simplicity", true, "Survival")
@@ -286,7 +285,6 @@ TDS:Place('Militant', 23.35695457458496, 0.9999932050704956, -18.083642959594727
 TDS:Sell(51, 40, 98, 33.8, false)
 
 elseif map == maplist[2] then
---V2.2c
 local TDS = loadstring(game:HttpGet("https://raw.githubusercontent.com/banbuskox/dfhtyxvzexrxgfdzgzfdvfdz/main/ckmhjvskfkmsStratFun2", true))() 
 TDS:Loadout("Scout", "Militant", "Farm", "nil", "nil") 
 TDS:Map("Forest Camp", true, "Survival")
@@ -572,7 +570,6 @@ TDS:Upgrade(54, 40, 98, 11.2, false)
 TDS:Upgrade(54, 40, 98, 11.4, false)
 
 elseif map == maplist[3] then
---V2.2c
 local TDS = loadstring(game:HttpGet("https://raw.githubusercontent.com/banbuskox/dfhtyxvzexrxgfdzgzfdvfdz/main/ckmhjvskfkmsStratFun2", true))() 
 TDS:Loadout("Scout", "Militant", "Farm", "nil", "nil") 
 TDS:Map("Meltdown", true, "Survival")
